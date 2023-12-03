@@ -17,3 +17,6 @@ IF You Have any problem In Script You Can Join Our Discord :-https://discord.gg/
 ```
 
 ## To Do
+* Add Coke And Weed Table
+* Add Skill System
+* Add Ps-buffs
