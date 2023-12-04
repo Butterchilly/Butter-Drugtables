@@ -20,3 +20,6 @@ IF You Have any problem In Script You Can Join Our Discord :-https://discord.gg/
 * Add Coke And Weed Table
 * Add Skill System
 * Add Ps-buffs
+* Add ox_lib
+* Add ox_target
+* Add ox_inventory
