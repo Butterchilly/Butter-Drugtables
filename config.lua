@@ -1,11 +1,18 @@
 Config = {}
 
+-- What Inventory do you use 
+Config.Inventory = 'qb' -- 'qb', 'ox'
+-- What Target do you use
+Config.Target = 'qb' -- 'qb', 'ox'
+-- what Notify do you use?
+Config.Notify = 'ox' -- 'qb', 'ox'
+
 Config.Meth = {
     Item = 'meth_table', -- \\ Spawn Code of the Meth Table
     Prop = 'v_ret_ml_tableb' -- \\ Prop For The Meth Table
 }
 
--- \\ Items That Are Needed // ---
+-- \\ Items That Are Needed For Meth // ---
 Config.Items = {
     Start_Cooking = 'paint_thinner',
     Preparing_Goods = 'powder',
