@@ -7,7 +7,7 @@ if Config.Core == 'qb' then
     QBCore.Functions.CreateUseableItem(Config.Meth.Item, function(source)
         TriggerClientEvent('Butter-Drugtables:Client:Spawn_Meth_Table', source)
     end)
-elseif Config.CoreConfig.Core == 'qbx' then
+elseif Config.Core == 'qbx' then
     exports.qbx_core:CreateUseableItem(Config.Meth.Item, function(source)
         TriggerClientEvent('Butter-Drugtables:Client:Spawn_Meth_Table', source)
     end)

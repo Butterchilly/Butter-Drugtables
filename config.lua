@@ -6,7 +6,7 @@ Config.Inventory = 'qb' -- 'qb', 'ox'
 -- What Target do you use
 Config.Target = 'qb' -- 'qb', 'ox'
 -- what Notify do you use?
-Config.Notify = 'ox' -- 'qb', 'ox'
+Config.Notify = 'qb' -- 'qb', 'ox'
 
 Config.Meth = {
     Item = 'meth_table', -- \\ Spawn Code of the Meth Table
