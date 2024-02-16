@@ -7,7 +7,7 @@ exports[Config.Resource_Names.Target]:AddTargetModel(Config.Meth.Prop, {
         event = "Butter-Drugtables:Client:Start_Cooking", 
         icon = 'fa-solid fa-flask', 
         label = 'Start Cooking', 
-        item = Config.Items.Start_Cooking
+        -- item = Config.Items.Start_Cooking
       },
       {
         type = "client",
