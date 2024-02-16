@@ -1,6 +1,6 @@
 local Base = {}
 
-local QBCore = exports[Config.Resource_Names.Core]:GetCoreObject()
+local QBCore = exports['qb-core']:GetCoreObject()
 
 function Base:Notify(text, type)
     if Config.Notify == 'qb' then
