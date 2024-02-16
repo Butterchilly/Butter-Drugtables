@@ -2,12 +2,12 @@ local QBCore = exports[Config.Resource_Names.Core]:GetCoreObject()
 
 -- \\ Make Item Usable // --
 QBCore.Functions.CreateUseableItem(Config.Meth.Item, function(source)
-    TriggerClientEvent('CC-Drugtables:Client:Spawn_Meth_Table', source)
+    TriggerClientEvent('Butter-Drugtables:Client:Spawn_Meth_Table', source)
 end)
 
 
 -- \\ Remove Item // --
-RegisterNetEvent('CC-Drugtables:server:RemoveItem', function(item, count)
+RegisterNetEvent('Butter-Drugtables:server:RemoveItem', function(item, count)
     local Player = QBCore.Functions.GetPlayer(source)
     if Config.Inventory == 'qb' then
     Player.Functions.RemoveItem(item, count)
@@ -17,7 +17,7 @@ RegisterNetEvent('CC-Drugtables:server:RemoveItem', function(item, count)
 end)
 
 -- \\ Add Item // --
-RegisterNetEvent('CC-Drugtables:server:AddItem', function(item, count)
+RegisterNetEvent('Butter-Drugtables:server:AddItem', function(item, count)
     local Player = QBCore.Functions.GetPlayer(source)
     if Config.Inventory == 'qb' then
     Player.Functions.AddItem(item, count)

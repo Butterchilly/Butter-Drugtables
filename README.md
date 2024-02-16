@@ -1,4 +1,4 @@
-## CC-Drugtables
+## Butter-Drugtables
 IF You Have any problem In Script You Can Join Our Discord :-https://discord.gg/uWJ2x5tJuR
 
 ## Go To qb-core/shared/items.lua
