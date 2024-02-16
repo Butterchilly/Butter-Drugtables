@@ -1,6 +1,12 @@
 ## Butter-Drugtables
 IF You Have any problem In Script You Can Join Our Discord :-https://discord.gg/uWJ2x5tJuR
 
+## Supportes
+* ***qb/ox Inv***
+* ***qb/ox Notify***
+* ***qb/ox Target***
+* ***qb/qbx Core***
+
 ## Go To qb-core/shared/items.lua
 
 ```lua
@@ -15,7 +21,7 @@ IF You Have any problem In Script You Can Join Our Discord :-https://discord.gg/
     meth_batch                   = { name = 'meth_batch', label = 'Meth Batch', weight = 100, type = 'item', image = 'meth_batch.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = '' },
 
 ```
-# If Using mz-skills Go To mz-skills/config.lua
+##  If Using mz-skills Go To mz-skills/config.lua
 ```
     ["Meth"] = {
         ["Current"] = 0,
@@ -24,6 +30,9 @@ IF You Have any problem In Script You Can Join Our Discord :-https://discord.gg/
         ['icon'] = 'fas fa-tree',
     }, 
 ```
+##  Dependency
+* ox_lib
+
 ## To Do
 * Add Coke And Weed Table
 * Add Ps-buffs
