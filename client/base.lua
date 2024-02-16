@@ -1,8 +1,8 @@
-local base = {}
+local Base = {}
 
 local QBCore = exports[Config.Resource_Names.Core]:GetCoreObject()
 
-function base:Notify(text, type)
+function Base:Notify(text, type)
     if Config.Notify == 'qb' then
         QBCore.Functions.Notify(text, type)
     elseif Config.Notify == 'ox' then
@@ -10,4 +10,4 @@ function base:Notify(text, type)
     end
 end
 
-return base
+return Base
