@@ -1,6 +1,6 @@
 Config = {}
 
-Config.Core = 'qb' -- 'qb' or 'ox'
+Config.Core = 'qb' -- 'qb' or 'qbx'
 -- What Inventory do you use 
 Config.Inventory = 'qb' -- 'qb', 'ox'
 -- What Target do you use
