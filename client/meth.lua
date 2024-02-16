@@ -21,7 +21,7 @@ RegisterNetEvent('Butter-Drugtables:Client:Start_Cooking',function ()
         TriggerServerEvent('Butter-Drugtables:server:RemoveItem', Config.Items.Start_Cooking, 1)
         TriggerServerEvent('Butter-Drugtables:server:AddItem', Config.Items.Preparing_Goods, 1)
     if Config.Skill_System  then
-        Base:Upate_Skill("Meth", 100)
+        Base:Upate_Skill("Meth", Config.Meth.Exp)
     end
     else
         Base:Notify('Failed To Coock ', 'error', 5000)
@@ -51,6 +51,9 @@ RegisterNetEvent('Butter-Drugtables:Client:Preparing_Goods',function ()
         Base:Notify('Step Completed', 'success', 5000)
         TriggerServerEvent('Butter-Drugtables:server:RemoveItem', Config.Items.Preparing_Goods, 1)
         TriggerServerEvent('Butter-Drugtables:server:AddItem', Config.Items.Combinen_Goods, 1)
+        if Config.Skill_System  then
+            Base:Upate_Skill("Meth", Config.Meth.Exp)
+        end
     else
         Base:Notify('Failed To Preparing Goods ', 'error', 5000)
     end
@@ -79,6 +82,9 @@ RegisterNetEvent('Butter-Drugtables:Client:Combinen_Goods',function ()
         Base:Notify('Step Completed', 'success', 5000)
         TriggerServerEvent('Butter-Drugtables:server:RemoveItem', Config.Items.Combinen_Goods, 1)
         TriggerServerEvent('Butter-Drugtables:server:AddItem', Config.Items.Mix_In_Water, 1)
+        if Config.Skill_System  then
+            Base:Upate_Skill("Meth", Config.Meth.Exp)
+        end
     else
         Base:Notify('Failed To Combinen Goods ', 'error', 5000)
     end
@@ -107,6 +113,9 @@ RegisterNetEvent('Butter-Drugtables:Client:Mix_In_Water',function ()
         Base:Notify('Step Completed', 'success', 5000)
         TriggerServerEvent('Butter-Drugtables:server:RemoveItem', Config.Items.Mix_In_Water, 1)
         TriggerServerEvent('Butter-Drugtables:server:AddItem', Config.Items.Add_Solvent, 1)
+        if Config.Skill_System  then
+            Base:Upate_Skill("Meth", Config.Meth.Exp)
+        end
     else
            Base:Notify('Failed To Mix Water ', 'error', 5000)
     end
@@ -135,6 +144,9 @@ RegisterNetEvent('Butter-Drugtables:Client:Add_Solvent',function ()
         Base:Notify('Step Completed', 'success', 5000)
         TriggerServerEvent('Butter-Drugtables:server:RemoveItem', Config.Items.Add_Solvent, 1)
         TriggerServerEvent('Butter-Drugtables:server:AddItem', Config.Items.Crystalize_Product, 1)
+        if Config.Skill_System  then
+            Base:Upate_Skill("Meth", Config.Meth.Exp)
+        end
     else
            Base:Notify('Failed To Put ', 'error', 5000)
     end
@@ -163,6 +175,9 @@ RegisterNetEvent('Butter-Drugtables:Client:Crystalize_Product',function ()
         Base:Notify('Step Completed', 'success', 5000)
         TriggerServerEvent('Butter-Drugtables:server:RemoveItem', Config.Items.Crystalize_Product, 1)
         TriggerServerEvent('Butter-Drugtables:server:AddItem', Config.Items.Pack_Product, 1)
+        if Config.Skill_System  then
+            Base:Upate_Skill("Meth", Config.Meth.Exp)
+        end
     else
            Base:Notify('Failed To Put ', 'error', 5000)
     end
@@ -191,6 +206,9 @@ RegisterNetEvent('Butter-Drugtables:Client:Pack_Product',function ()
         Base:Notify('Step Completed', 'success', 5000)
         TriggerServerEvent('Butter-Drugtables:server:RemoveItem', Config.Items.Pack_Product, 1)
         TriggerServerEvent('Butter-Drugtables:server:AddItem', Config.Items.Meth, 1)
+        if Config.Skill_System  then
+            Base:Upate_Skill("Meth", Config.Meth.Exp)
+        end
     else
            Base:Notify('Failed To Put ', 'error', 5000)
     end
@@ -226,6 +244,7 @@ RegisterNetEvent('Butter-Drugtables:Client:Spawn_Meth_Table', function()
         PlaceObjectOnGroundProperly(obj)
         SetEntityAsMissionEntity(obj)
         TriggerServerEvent('Butter-Drugtables:server:RemoveItem', Config.Meth.Item, 1)
+        
     else
         Base:Notify('Canceled', 'error', 5000)
     end
