@@ -10,4 +10,11 @@ function Base:Notify(text, type)
     end
 end
 
+function Base:Hasitem(item, ammount)
+    if Config.Inventory == 'qb' then
+        return exports['qb-inventory']:HasItem(item, ammount)
+    elseif Config.Inventory == 'ox' then
+        print('ox')
+    end
+end
 return Base
