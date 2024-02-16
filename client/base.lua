@@ -17,4 +17,16 @@ function Base:Hasitem(item, ammount)
         print('ox')
     end
 end
+
+function Base:Upate_Skill(skill, amount)
+    if Config.Skill == 'mz' then
+        exports["mz-skills"]:UpdateSkill(skill, amount)
+    end
+end
+
+function Base:Check_Skill(skill, val)
+    if Config.Skill == 'mz' then
+        exports["mz-skills"]:CheckSkill(skill, val)
+    end
+end
 return Base

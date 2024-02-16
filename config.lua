@@ -8,6 +8,10 @@ Config.Target = 'qb' -- 'qb', 'ox'
 -- what Notify do you use?
 Config.Notify = 'qb' -- 'qb', 'ox'
 
+Config.Skill_System = true
+-- If Skill_System = true 
+Config.Skill = 'mz' -- 'mz' for [mz-skills]
+
 Config.Meth = {
     Item = 'meth_table', -- \\ Spawn Code of the Meth Table
     Prop = 'v_ret_ml_tableb' -- \\ Prop For The Meth Table

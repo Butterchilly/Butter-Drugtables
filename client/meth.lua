@@ -1,5 +1,4 @@
 local Base = require 'client.base'
-local QBCore = exports[Config.Resource_Names.Core]:GetCoreObject()
 
 -- \\ Start Cooking // --
 RegisterNetEvent('Butter-Drugtables:Client:Start_Cooking',function ()
@@ -21,6 +20,9 @@ RegisterNetEvent('Butter-Drugtables:Client:Start_Cooking',function ()
         Base:Notify('Step Completed', 'success', 5000)
         TriggerServerEvent('Butter-Drugtables:server:RemoveItem', Config.Items.Start_Cooking, 1)
         TriggerServerEvent('Butter-Drugtables:server:AddItem', Config.Items.Preparing_Goods, 1)
+    if Config.Skill_System  then
+        Base:Upate_Skill("Meth", 100)
+    end
     else
         Base:Notify('Failed To Coock ', 'error', 5000)
     end
