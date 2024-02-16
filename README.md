@@ -15,11 +15,16 @@ IF You Have any problem In Script You Can Join Our Discord :-https://discord.gg/
     meth_batch                   = { name = 'meth_batch', label = 'Meth Batch', weight = 100, type = 'item', image = 'meth_batch.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = '' },
 
 ```
-
+# If Using mz-skills Go To mz-skills/config.lua
+```
+    ["Meth"] = {
+        ["Current"] = 0,
+        ["RemoveAmount"] = 0,
+        ["Stat"] = "meth_table",
+        ['icon'] = 'fas fa-tree',
+    }, 
+```
 ## To Do
 * Add Coke And Weed Table
-* Add Skill System
 * Add Ps-buffs
-* Add ox_lib
-* Add ox_target
-* Add ox_inventory
+
